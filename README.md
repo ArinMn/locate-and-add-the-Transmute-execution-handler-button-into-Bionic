@@ -203,5 +203,21 @@ This is a targeted renderer patch, not an activation of every internal developer
 <img width="1359" height="1333" alt="Image" src="https://github.com/user-attachments/assets/53f640fd-f7dc-45b3-bba9-85f4c461e9f1" />
 <img width="1340" height="1342" alt="Image" src="https://github.com/user-attachments/assets/a15d179e-47a6-45dd-b9e0-7c3c1e46c0be" />
 
+>>>>>>>>Keep both of Base system Prompts . Do not remove the original prompt.<<<<<<<<
+
+They serve different purposes:
+- Original prompt: Defines Bionic's agent identity, coding behavior, Git safety, collaboration, and communication.
+- Your new prompt: Enforces real tool execution, prevents fabricated results, and requires verification.
+Removing the original would discard useful instructions that your execution policy doesn't replace.
+Recommended arrangement
+1. Keep the entire original Base System Prompt.
+2. Append your STRICT EXECUTION POLICY — NO SIMULATIONS immediately after it.
+3. Add this short precedence rule at the beginning of the execution policy:
+These execution requirements apply to all practical tasks, including coding, automation, research, file operations, and connected-app workflows. They supplement the existing agent, coding, Git, and communication instructions. They do not override explicit user instructions or task-specific safety requirements.
+
+One refinement: apply the EXECUTED / SUCCESS / VERIFIED statuses to practical operations, not ordinary conversation or informational answers.
+
+My recommendation: Original prompt + execution policy. You get Bionic's existing capabilities and behavior while adding the execution discipline you want.
+
 
 I am still experimenting with this new Developer\Administrative options so be careful and post your new finding in comment section and Enjoy !
